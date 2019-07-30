@@ -1,0 +1,40 @@
+.mui-content {
+  position: relative;
+}
+.mui-content #key-value-box #items {
+  position: relative;
+}
+.mui-content #key-value-box #items .item {
+  display: flex;
+}
+.mui-content #key-value-box #items .item input {
+  flex: 4;
+}
+.mui-content #key-value-box #items .item span {
+  flex: 2;
+  line-height: 40px;
+}
+.mui-content #key-value-box #items .mui-icon-plus {
+  display: block;
+  position: absolute;
+  bottom: 32px;
+  right: 20px;
+  transform: translateY(50%);
+  line-height: 62px;
+  font-size: 30px;
+  color: #007aff;
+  z-index: 999;
+}
+.mui-content #submit {
+  position: relative;
+  left: 50%;
+  margin-top: 10px;
+  transform: translateX(-50%);
+  width: 200px;
+}
+.mui-content .mui-input-group2 {
+  margin: 5px 0px;
+}
+.mui-content #res-data-box {
+  position: relative;
+}

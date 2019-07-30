@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="assets/mui/css/mui.min.css">
+    <script src="assets/mui/js/mui.min.js"></script>
+    <script src="./assets/zepto/zepto.min.js"></script>
+    <script src="./js/test.js"></script>
+    <link rel="stylesheet" href="./css/test.css">
+</head>
+
+<body>
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">测试页面, 测试接口</h1>
+    </header>
+    <nav class="mui-bar mui-bar-tab">
+        <a class="mui-tab-item mui-active" href="#tabbar">
+            <span class="mui-icon mui-icon-home"></span>
+            <span class="mui-tab-label">首页</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-chat">
+            <span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+            <span class="mui-tab-label">消息</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-contact">
+            <span class="mui-icon mui-icon-contact"></span>
+            <span class="mui-tab-label">通讯录</span>
+        </a>
+        <a class="mui-tab-item" href="#tabbar-with-map">
+            <span class="mui-icon mui-icon-gear"></span>
+            <span class="mui-tab-label">设置</span>
+        </a>
+    </nav>
+    <div class="mui-content">
+        <h5 class="mui-content-padded">选择请求方式: </h5>
+        <form class="mui-input-group">
+                <ul class="mui-table-view mui-table-view-radio">
+                    <li class="mui-table-view-cell mui-selected">
+                        <a class="mui-navigate-right">
+                            get
+                        </a>
+                    </li>
+                    <li class="mui-table-view-cell">
+                        <a class="mui-navigate-right">
+                            post
+                        </a>
+                    </li>
+                </ul>
+    
+            </form>
+        <h5 class="mui-content-padded">请求体</h5>
+
+        <form class="mui-input-group" id="key-value-box">
+            <ul id="items" class="mui-table-view">
+                <li class="item mui-table-view-cell">
+                    <input class="key" type="text" placeholder="键">
+                    <span>=</span>
+                    <input class="value" type="text" placeholder="值">
+                </li>
+                <span class="mui-icon mui-icon-plus"></span>
+            </ul>
+
+        </form>
+        <h5 class="mui-content-padded">接口地址</h5>
+
+
+        <form class="mui-input-group">
+            <div class="mui-input-row">
+                <label>接口地址</label>
+                <input id="port" type="text" placeholder="接口地址">
+            </div>
+
+        </form>
+        <button id="submit" type="button" class="mui-btn mui-btn-primary mui-btn-outlined">
+            发送请求
+        </button>
+
+        <div id="res-data-box" class="mui-input-row" style="margin: 10px 5px;display: block;">
+            <textarea style="margin-bottom: 0px;" id="res-data" rows="5" placeholder="接收响应体"></textarea>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
